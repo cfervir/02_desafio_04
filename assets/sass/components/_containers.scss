@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  @include flex-container;
+
+  &--start {
+    @include flex-container(flex-start);
+  }
+}

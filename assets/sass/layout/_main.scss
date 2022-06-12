@@ -1,0 +1,10 @@
+@use '../abstracts/mixins' as *;
+
+.subtitle {
+    @include pddng(subtitle);
+    text-align: center;
+
+    &__title {
+        @include fnt-shw(xl, 1, bold);
+    }
+}

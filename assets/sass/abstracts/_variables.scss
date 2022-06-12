@@ -1,0 +1,37 @@
+@use 'sass:map';
+
+// General-BG Colors
+$darkest-bg: #686963;
+$dark-bg: #91918D;
+$bright-bg: #E56353;
+$light-bg: #FAFAFA;
+
+// Font type
+$font-name: 'Raleway', Arial, sans-serif;
+
+// Font Colors
+$light-fnt: #FFFFFF;
+$dark-fnt: #686963;
+
+// Font sizes, as a map.
+$fnt-size: (
+  'xl': 3em,
+  'l': 2rem,
+  'm': 1.5rem,
+  'default': 1rem,
+  's': 0.75rem
+);
+
+// Font weights, as a map.
+$fnt-weights: (
+  'light': 200,
+  'medium': 400,
+  'bold': 700,
+);
+
+// Spacing
+$pddng-space: (
+  'title': 20em 0,
+  'subtitle': 3.5em 0,
+  'cards': 2.5em 0
+);

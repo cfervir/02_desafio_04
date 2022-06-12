@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.button {
+  @include fnt-shw(m, 1, bold);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 2.5em;
+  margin: 0 0.625em;
+  border-radius: 1.5em;
+
+  &:hover,
+  &:focus {
+    transition: all .1s ease-in;
+  }
+
+  &--light {
+    background-color: $light-bg;
+    color: $dark-fnt;
+    border: $dark-fnt solid 1px;
+  }
+
+  &--light:hover,
+  &--light:focus {
+    color: $light-fnt;
+    background-color: $dark-bg;
+    border-color: $darkest-bg;
+  }
+}

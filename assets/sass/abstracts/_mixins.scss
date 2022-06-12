@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+// Flex with "normal" settings
+@mixin flex-container($align: center) {
+  display: flex;
+  justify-content: center;
+  align-items: $align;
+  flex-direction: column;
+}
+
+// Font Size - Line height - Font weight
+@mixin fnt-shw ($size: default, $hgt: initial, $weight: initial) {
+  font-size: map-get($fnt-size, $size);
+  line-height: $hgt;
+  font-weight: map-get($fnt-weights, $weight);
+}
+
+// Font Size
+@mixin fnt-size ($size: default) {
+  font-size: map-get($fnt-size, $size);
+}
+
+// Font Height
+@mixin fnt-hgt ($hgt: inherit) {
+  line-height: $hgt;
+}
+
+// Font Weight
+@mixin fnt-weight ($weight: medium) {
+  font-weight: map-get($fnt-weights, $weight);
+}
+
+// Spacing for items
+@mixin pddng ($p-value: cards) {
+  padding: map-get($pddng-space, $p-value);
+}

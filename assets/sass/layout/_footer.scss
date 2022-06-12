@@ -1,0 +1,9 @@
+@use '../abstracts/mixins' as *;
+
+.footer {
+  @include pddng(subtitle);
+
+  &__img {
+    max-width: 8rem;
+  }
+}

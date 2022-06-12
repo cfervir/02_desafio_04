@@ -1,0 +1,11 @@
+@use '../abstracts/mixins' as *;
+
+.article {
+  @include pddng;
+  text-align: center;
+
+  &__title {
+    @include fnt-shw(l, 1, bold);
+    margin: 0 0.5em 0.625em;
+  }
+}

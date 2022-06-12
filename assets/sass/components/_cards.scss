@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.card {
+
+  &--dark {
+    color: $light-fnt;
+  }
+
+  &--light {
+    color: $dark-fnt;
+  }
+
+  &__img--small {
+    max-width: 20rem;
+  }
+
+  &__title {
+    @include fnt-shw(l, 1.1, bold);
+    text-align: center;
+    padding: 0.625em 0;
+    margin: 0 0.5em;
+  }
+
+  &__text {
+    max-width: 42rem;
+    margin: 0 1em;
+  }
+
+  &__text + &__text {
+    padding-top: 0.75em;
+  }
+
+  & + & {
+    padding-top: 2.5em;
+  }
+}

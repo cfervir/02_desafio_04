@@ -1,0 +1,17 @@
+@use '../abstracts/mixins' as *;
+
+.header {
+    @include pddng(title);
+    text-align: center;
+
+    &__title {
+        @include fnt-shw(xl, 1.1, light);
+        margin: 0 0.5em;
+    }
+
+    &__title--special {
+        @include fnt-weight(bold);
+        display: block;
+        text-transform: uppercase;
+    }
+}
