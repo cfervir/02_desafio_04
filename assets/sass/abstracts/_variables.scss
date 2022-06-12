@@ -23,13 +23,13 @@ $fnt-size: (
 );
 
 // Font weights, as a map.
-$fnt-weights: (
+$fnt-weights: ( 
   'light': 200,
   'medium': 400,
-  'bold': 700,
+  'bold': 700
 );
 
-// Spacing
+// Spacing, as a map.
 $pddng-space: (
   'title': 20em 0,
   'subtitle': 3.5em 0,
